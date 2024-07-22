@@ -1,12 +1,11 @@
-function Search() { 
+function Search() {
+  function handleInputChange(e) {
+    // 'e' represents synthetic event
+    const nativeEvent = e.nativeEvent
+    e.stopPropogation()
+    e.preventDefault()
+    // Code goes here..
+  }
 
-    handleInputChange(e) { 
-        // 'e' represents synthetic event 
-          const nativeEvent = e.nativeEvent; 
-          e.stopPropogation(); 
-          e.preventDefault(); 
-          // Code goes here.. 
-    } 
-    
-    return <input onChange={handleInputChange} /> 
-} 
+  return <input onChange={handleInputChange} />
+}

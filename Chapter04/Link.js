@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-
 ;<Link
   to={{
     pathname: '/route',

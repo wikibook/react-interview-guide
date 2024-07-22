@@ -1,7 +1,11 @@
-handleUserDetails() { 
-    console.log("Show User details"); 
-}
+import React from 'react'
 
-render() { 
-    return <button onClick={() => this.handleUserDetails()}>Profile</button>; 
-} 
+class Component extends React.PureComponent {
+  handleUserDetails() {
+    console.log('Show User details')
+  }
+
+  render() {
+    return <button onClick={() => this.handleUserDetails()}>Profile</button>
+  }
+}

@@ -1,14 +1,13 @@
-{
-    type: 'div',
-    props: {
-      children: {
-          type: 'button',
-          props:  {
-              children: 'Sign Out'
-              id: 'signout-btn'
-          }
+const signoutReactElementObject = {
+  type: 'div',
+  props: {
+    children: {
+      type: 'button',
+      props: {
+        children: 'Sign Out',
+        id: 'signout-btn',
       },
-      id: 'signout-container'
-    }
-  }
-  
+    },
+    id: 'signout-container',
+  },
+}
