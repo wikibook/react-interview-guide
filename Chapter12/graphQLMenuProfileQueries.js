@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 const GET_MENU = gql`
   query {
@@ -9,7 +9,7 @@ const GET_MENU = gql`
       description
     }
   }
-`;
+`
 
 const GET_PROFILE = gql`
   query {
@@ -18,5 +18,5 @@ const GET_PROFILE = gql`
       bio
     }
   }
-`;
-export { GET_MENU, GET_PROFILE };
+`
+export { GET_MENU, GET_PROFILE }

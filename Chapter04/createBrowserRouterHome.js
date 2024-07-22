@@ -1,7 +1,7 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './index.css'
 
 const router = createBrowserRouter([
   {
@@ -9,10 +9,10 @@ const router = createBrowserRouter([
 
     element: <div>Hello world!</div>,
   },
-]);
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
-);
+  </React.StrictMode>,
+)

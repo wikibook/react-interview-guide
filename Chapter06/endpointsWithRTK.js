@@ -1,9 +1,9 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
 export const usersServerApi = createApi({
-  reducerPath: "api",
+  reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://jsonplaceholder.typicode.com/",
+    baseUrl: 'https://jsonplaceholder.typicode.com/',
   }),
 
   endpoints: (builder) => ({
@@ -13,12 +13,12 @@ export const usersServerApi = createApi({
 
     createUser: builder.mutation({
       query: (name) => ({
-        url: "users",
-        method: "POST",
+        url: 'users',
+        method: 'POST',
         body: { name },
       }),
     }),
   }),
-});
+})
 
-export const { useUsersQuery, useCreateUserMutation } = usersServerApi;
+export const { useUsersQuery, useCreateUserMutation } = usersServerApi

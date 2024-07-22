@@ -1,1 +1,1 @@
-const deferredAuthorDetails = useDeferredValue(author);
+const deferredAuthorDetails = useDeferredValue(author)

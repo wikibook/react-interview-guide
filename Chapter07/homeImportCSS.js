@@ -1,4 +1,4 @@
-import './Home.css';
+import './Home.css'
 
 export default function Home() {
   return (
@@ -21,5 +21,5 @@ export default function Home() {
         </p>
       </section>
     </div>
-  );
+  )
 }

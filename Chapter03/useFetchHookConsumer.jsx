@@ -1,8 +1,8 @@
-import useFetchData from "./useFetchData.js";
+import useFetchData from './useFetchData.js'
 
 export default function Posts() {
-  const url = "https://jsonplaceholder.typicode.com/posts?userId=1";
-  const { data, loading } = useFetchData(url, []);
+  const url = 'https://jsonplaceholder.typicode.com/posts?userId=1'
+  const { data, loading } = useFetchData(url, [])
 
   return (
     <>
@@ -18,5 +18,5 @@ export default function Posts() {
           </div>
         ))}
     </>
-  );
+  )
 }

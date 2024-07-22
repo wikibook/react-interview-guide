@@ -1,7 +1,7 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { NotFound, ErrorPage } from './ErrorComponents';
-import Home from './Home';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { NotFound, ErrorPage } from './ErrorComponents'
+import Home from './Home'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route component={NotFound} />
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

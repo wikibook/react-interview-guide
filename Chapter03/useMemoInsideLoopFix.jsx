@@ -1,5 +1,5 @@
 {
   products.map((product) => {
-    return <Report product={product} />;
-  });
+    return <Report product={product} />
+  })
 }

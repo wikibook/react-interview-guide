@@ -1,5 +1,5 @@
 function navigate(url) {
   startTransition(() => {
-    setPage(url);
-  });
+    setPage(url)
+  })
 }

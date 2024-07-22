@@ -15,6 +15,6 @@ createBrowserRouter(
         <Route path="login" element={<Login />} loader={redirectIfUser} />
         <Route path="logout" action={logoutUser} />
       </Route>
-    </Route>
-  )
-);
+    </Route>,
+  ),
+)

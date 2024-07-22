@@ -1,6 +1,6 @@
 const findCity = useMemo(() => {
   return {
-    country: "USA",
+    country: 'USA',
     name: name,
-  };
-}, [name]);
+  }
+}, [name])

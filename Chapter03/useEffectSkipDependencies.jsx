@@ -1,5 +1,3 @@
-useEffect(() => { 
-
-    // Runs after every re-render 
-    
-    });
+useEffect(() => {
+  // Runs after every re-render
+})

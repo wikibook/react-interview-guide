@@ -1,21 +1,21 @@
-const userUrl = "https://jsonplaceholder.typicode.com/users";
+const userUrl = 'https://jsonplaceholder.typicode.com/users'
 
 export default function Users() {
-  const [users, setUsers] = useState([]);
-  const [name, setName] = useState("John");
-  const [message, setMessage] = useState("");
+  const [users, setUsers] = useState([])
+  const [name, setName] = useState('John')
+  const [message, setMessage] = useState('')
 
   const userQueryOptions = {
     url: userUrl,
     name,
-  };
+  }
 
   useEffect(() => {
-    const userUrl = buildUserURL(userQueryOptions); //buildUserURL is excluded from code snippet
+    const userUrl = buildUserURL(userQueryOptions) //buildUserURL is excluded from code snippet
     fetch(userUrl)
       .then((res) => res.json())
-      .then((users) => setUsers(users));
-  }, [userQueryOptions]);
+      .then((users) => setUsers(users))
+  }, [userQueryOptions])
 
   return (
     <>
@@ -30,5 +30,5 @@ export default function Users() {
           </div>
         ))}
     </>
-  );
+  )
 }

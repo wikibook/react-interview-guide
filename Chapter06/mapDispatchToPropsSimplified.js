@@ -1,3 +1,3 @@
-const mapDispatchToProps = { 
-    toggleCity 
-}; 
+const mapDispatchToProps = {
+  toggleCity,
+}

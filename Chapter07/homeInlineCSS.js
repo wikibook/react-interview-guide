@@ -3,13 +3,13 @@ const container = {
   flexFlow: 'column nowrap',
   backgroundColor: '#7e7dd6',
   padding: '2rem',
-};
+}
 
 const mainContent = {
   display: 'flex',
   flexFlow: 'row nowrap',
   padding: '2rem 0',
-};
+}
 
 export default function Home() {
   return (
@@ -38,5 +38,5 @@ export default function Home() {
         </section>
       </div>
     </>
-  );
+  )
 }

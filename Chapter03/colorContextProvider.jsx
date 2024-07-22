@@ -1,4 +1,4 @@
-<ColorContext.Provider value="blue">
+;<ColorContext.Provider value="blue">
   <About />
   <Services />
   <Clients />

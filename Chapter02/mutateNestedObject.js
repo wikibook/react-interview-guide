@@ -1,3 +1,3 @@
-setUser(user => { 
-    user.address.postalCode = 75015; 
-}); 
+setUser((user) => {
+  user.address.postalCode = 75015
+})

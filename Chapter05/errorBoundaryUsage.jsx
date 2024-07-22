@@ -1,3 +1,3 @@
-<MyErrorBoundary>
+;<MyErrorBoundary>
   <MyComponent />
 </MyErrorBoundary>

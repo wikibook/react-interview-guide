@@ -1,9 +1,9 @@
-import { Route, useParams } from 'react-router-dom';
+import { Route, useParams } from 'react-router-dom'
 
 function MyComponent() {
-  let { id } = useParams();
+  let { id } = useParams()
 
-  return <h2>My id is: {id}</h2>;
+  return <h2>My id is: {id}</h2>
 }
 
 function App() {
@@ -11,5 +11,5 @@ function App() {
     <Route path="/post/:id">
       <MyComponent />
     </Route>
-  );
+  )
 }

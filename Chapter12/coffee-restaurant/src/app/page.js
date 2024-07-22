@@ -1,18 +1,18 @@
-'use client';
-import { styled, ThemeProvider } from 'styled-components';
-import GlobalStyle from '../../src/app/components/GlobalStyles';
-import MainMenu from './components/MainMenu';
+'use client'
+import { styled, ThemeProvider } from 'styled-components'
+import GlobalStyle from '../../src/app/components/GlobalStyles'
+import MainMenu from './components/MainMenu'
 
 const theme = {
   colors: {
     primary: 'rgb(15 23 42)',
   },
-};
+}
 
 const MainContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-`;
+`
 
 const CoverHeadingBG = styled.div`
   margin: 2rem auto;
@@ -23,16 +23,16 @@ const CoverHeadingBG = styled.div`
   color: rgb(255 255 255);
   border-radius: 2rem;
   padding: 2rem;
-`;
+`
 
 const CoverHeading = styled.h1`
   text-transform: uppercase;
-`;
+`
 
 const CoverIntro = styled.p`
   font-size: 1.4rem;
   margin: 2rem 2rem;
-`;
+`
 
 const Hero = styled.div`
   margin: 2rem auto;
@@ -43,7 +43,7 @@ const Hero = styled.div`
   background-color: rgb(4 120 87);
   height: 67.5rem;
   width: 100%;
-`;
+`
 
 export default function Home() {
   return (
@@ -63,5 +63,5 @@ export default function Home() {
         </MainContainer>
       </ThemeProvider>
     </>
-  );
+  )
 }

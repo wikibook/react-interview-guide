@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Routes, Route, useParams } from 'react-router-dom';
+import * as React from 'react'
+import { Routes, Route, useParams } from 'react-router-dom'
 
 function ProfilePage() {
   // Get the userId param from the URL.
 
-  let { userId } = useParams();
+  let { userId } = useParams()
 
   // ...
 }
@@ -18,5 +18,5 @@ function App() {
         {/* <Route path="me" element={...} />  */}
       </Route>
     </Routes>
-  );
+  )
 }

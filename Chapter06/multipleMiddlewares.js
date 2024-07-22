@@ -2,5 +2,5 @@ const middleware = applyMiddleware(
   loggerMiddleware,
   firstMiddleware,
   secondMiddleware,
-  thirdMiddleware
-);
+  thirdMiddleware,
+)

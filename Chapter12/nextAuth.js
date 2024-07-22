@@ -1,6 +1,6 @@
-import NextAuth from 'next-auth';
-import GithubProvider from 'next-auth/providers/github';
-import GoogleProvider from 'next-auth/providers/google';
+import NextAuth from 'next-auth'
+import GithubProvider from 'next-auth/providers/github'
+import GoogleProvider from 'next-auth/providers/google'
 
 export const handler = NextAuth({
   providers: [
@@ -14,6 +14,6 @@ export const handler = NextAuth({
       clientSecret: process.env.GOOGLE_SECRET,
     }),
   ],
-});
+})
 
-export { handler as GET, handler as POST };
+export { handler as GET, handler as POST }

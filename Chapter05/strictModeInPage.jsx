@@ -1,4 +1,4 @@
-<>
+;<>
   <Navigation>
     <Details>
       <StrictMode>
@@ -8,4 +8,4 @@
     </Details>
     <Footer />
   </Navigation>
-</>;
+</>

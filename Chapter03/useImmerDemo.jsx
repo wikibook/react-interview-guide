@@ -1,19 +1,19 @@
-import { useImmer } from "use-immer";
+import { useImmer } from 'use-immer'
 
 function UserProfile() {
   const [user, setUser] = useImmer({
-    name: "Tom",
+    name: 'Tom',
     address: {
-      country: "United States",
-      city: "Austin",
+      country: 'United States',
+      city: 'Austin',
       postalCode: 73301,
     },
-  });
+  })
 
   function updatePostalCode(code) {
     setUser((draft) => {
-      draft.address.postalCode = code;
-    });
+      draft.address.postalCode = code
+    })
   }
 
   return (
@@ -24,10 +24,10 @@ function UserProfile() {
       </h1>
       <input
         onChange={(e) => {
-          updatePostalCode(e.target.value);
+          updatePostalCode(e.target.value)
         }}
         value={user.address.postalCode}
       />
     </div>
-  );
+  )
 }

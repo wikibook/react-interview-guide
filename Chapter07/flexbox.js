@@ -7,5 +7,5 @@ export default function Home() {
         <div class="basis-1/2 bg-teal-800">03</div>
       </div>
     </>
-  );
+  )
 }

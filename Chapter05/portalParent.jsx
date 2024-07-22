@@ -1,5 +1,5 @@
 function ParentComponent() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="container">
@@ -10,5 +10,5 @@ function ParentComponent() {
         onClose={() => setOpen(false)}
       />
     </div>
-  );
+  )
 }

@@ -1,12 +1,12 @@
-import { forwardRef } from 'react'; 
+import { forwardRef } from 'react'
 
-const MySingInButton = forwardRef(function  MySingInButton(props, ref) { 
-  const { label, ...otherProps } = props; 
+const MySingInButton = forwardRef(function MySingInButton(props, ref) {
+  const { label, ...otherProps } = props
 
-  return ( 
-    <label> 
-      {label} 
-      <button {...otherProps} ref={ref} /> 
-    </label> 
-  ); 
-}); 
+  return (
+    <label>
+      {label}
+      <button {...otherProps} ref={ref} />
+    </label>
+  )
+})

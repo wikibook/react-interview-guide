@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
-<Link
+;<Link
   to={{
     pathname: '/route',
     state: { myData: 'Hello, World!' },
   }}
 >
   My Link
-</Link>;
+</Link>

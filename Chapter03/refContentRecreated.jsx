@@ -3,6 +3,6 @@ function CreateBlogArticle() {
 }
 
 function Blog() {
-  const articleRef = useRef(new CreateBlogArticle());
+  const articleRef = useRef(new CreateBlogArticle())
   //...
 }

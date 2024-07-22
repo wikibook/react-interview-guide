@@ -1,1 +1,1 @@
-<Route path="/about" Component={About} />;
+;<Route path="/about" Component={About} />

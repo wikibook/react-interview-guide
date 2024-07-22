@@ -1,7 +1,7 @@
-import './styles.scss';
+import './styles.scss'
 
 const MyComponent = () => {
-  return <div className="myComponent">Hello, World!</div>;
-};
+  return <div className="myComponent">Hello, World!</div>
+}
 
-export default MyComponent;
+export default MyComponent

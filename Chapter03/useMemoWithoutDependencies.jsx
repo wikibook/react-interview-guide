@@ -1,1 +1,1 @@
-const filterCities = useMemo(() => filteredCities(city, country));
+const filterCities = useMemo(() => filteredCities(city, country))

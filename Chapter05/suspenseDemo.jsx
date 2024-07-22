@@ -1,6 +1,6 @@
-import { Suspense } from "react";
+import { Suspense } from 'react'
 
-import Posts from "./posts.js";
+import Posts from './posts.js'
 
 export default function Author({ author }) {
   return (
@@ -11,9 +11,9 @@ export default function Author({ author }) {
         <Posts authorId={author.id} />
       </Suspense>
     </>
-  );
+  )
 }
 
 function Loading() {
-  return <h2>Loading...</h2>;
+  return <h2>Loading...</h2>
 }

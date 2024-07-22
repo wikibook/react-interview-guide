@@ -1,1 +1,3 @@
-const withHigherOrderComponent = (OriginalComponent) => (props) => <OriginalComponent {...props} />;
+const withHigherOrderComponent = (OriginalComponent) => (props) => (
+  <OriginalComponent {...props} />
+)

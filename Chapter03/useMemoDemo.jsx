@@ -1,20 +1,20 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo } from 'react'
 
 function factorial(number) {
   if (number <= 0) {
-    return "Number should be positive value.";
+    return 'Number should be positive value.'
   } else if (number === 1) {
-    return 1;
+    return 1
   } else {
-    return number * factorial(number - 1);
+    return number * factorial(number - 1)
   }
 }
 
 export default function CounterFactorial() {
-  const [count, setCount] = useState(0);
-  const [number, setNumber] = useState(1);
+  const [count, setCount] = useState(0)
+  const [number, setNumber] = useState(1)
 
-  const factorial = useMemo(() => factorial(number), [number]);
+  const factorial = useMemo(() => factorial(number), [number])
 
   return (
     <>
@@ -27,5 +27,5 @@ export default function CounterFactorial() {
         onClick={() => setNumber(number + 1)}
       />
     </>
-  );
+  )
 }

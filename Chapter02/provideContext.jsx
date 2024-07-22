@@ -1,11 +1,11 @@
-import { UserContext } from './userContext'; 
+import { UserContext } from './userContext'
 
-function App() { 
-  const value = 'Michael'; 
+function App() {
+  const value = 'Michael'
 
-  return ( 
-    <Context.Provider value={value}> 
-      <MyParentComponent /> 
-    </Context.Provider> 
-  ); 
-} 
+  return (
+    <Context.Provider value={value}>
+      <MyParentComponent />
+    </Context.Provider>
+  )
+}

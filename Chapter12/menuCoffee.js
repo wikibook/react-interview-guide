@@ -11,4 +11,4 @@ export const menu = [
     name: 'Cappuccino',
     description: 'Espresso',
   },
-];
+]
