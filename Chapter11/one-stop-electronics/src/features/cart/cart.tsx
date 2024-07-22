@@ -1,20 +1,20 @@
-import { FormattedMessage, FormattedNumber } from "react-intl"
-import { useAppSelector } from "@/app/store/hooks"
+import { FormattedMessage, FormattedNumber } from 'react-intl'
+import { useAppSelector } from '@/app/store/hooks'
 import {
   selectCartProducts,
   selectCartTotalPrice,
-} from "@/app/store/cart/cart.selector"
+} from '@/app/store/cart/cart.selector'
 import {
   clearProductFromCart,
   addProductToCart,
   removeProductFromCart,
-} from "@/app/store/cart/cart.slice"
-import { Cart } from "@/app/store/cart/cart.types"
-import { useAppDispatch } from "@/app/store/hooks"
-import MyButton from "@/components/button/button"
-import { ReactComponent as PlusCartProduct } from "@/assets/plus.svg"
-import { ReactComponent as MinusCartProduct } from "@/assets/minus.svg"
-import { ReactComponent as ClearCartProduct } from "@/assets/clear.svg"
+} from '@/app/store/cart/cart.slice'
+import { Cart } from '@/app/store/cart/cart.types'
+import { useAppDispatch } from '@/app/store/hooks'
+import MyButton from '@/components/button/button'
+import { ReactComponent as PlusCartProduct } from '@/assets/plus.svg'
+import { ReactComponent as MinusCartProduct } from '@/assets/minus.svg'
+import { ReactComponent as ClearCartProduct } from '@/assets/clear.svg'
 import {
   CartContainer,
   CartItemContainer,
@@ -24,7 +24,7 @@ import {
   FieldContainer,
   EmptyCartContainer,
   CartFooterContainer,
-} from "./cart.styles"
+} from './cart.styles'
 
 const CartProducts = () => {
   const cartProducts = useAppSelector(selectCartProducts)
@@ -37,7 +37,7 @@ const CartProducts = () => {
     dispatch(addProductToCart(cartProduct))
   const removeCartProduct = (cartProduct: Cart) =>
     dispatch(removeProductFromCart(cartProduct))
-    
+
   return (
     <CartContainer>
       {cartProducts &&

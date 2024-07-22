@@ -1,6 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit"
-import { CartState, Cart } from "./cart.types"
-import { Product } from "@/app/store/product/product.types"
+import { createSlice } from '@reduxjs/toolkit'
+import { CartState, Cart } from './cart.types'
+import { Product } from '@/app/store/product/product.types'
 
 const existingProduct = (cartProducts: Cart[], product: Product) =>
   cartProducts.find((cartProduct) => cartProduct.id === product.id)
@@ -44,7 +44,7 @@ const INITIAL_STATE: CartState = {
 }
 
 export const cartSlice = createSlice({
-  name: "cart",
+  name: 'cart',
   initialState: INITIAL_STATE,
   reducers: {
     addProductToCart(state, action) {

@@ -1,6 +1,6 @@
-import { createSelector } from "reselect"
-import { RootState } from "@/app/store/store.js"
-import { UserState } from "./user.types.ts"
+import { createSelector } from 'reselect'
+import { RootState } from '@/app/store/store.js'
+import { UserState } from './user.types.ts'
 
 export const selectUserReducer = (state: RootState): UserState => state.user
 

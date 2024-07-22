@@ -3,29 +3,29 @@ import {
   clearProductFromCart,
   removeProductFromCart,
   resetCartProducts,
-} from "./cart.slice"
-import { CartState } from "./cart.types"
-import { Cart } from "./cart.types"
-import { addProductToCart } from "./cart.slice"
+} from './cart.slice'
+import { CartState } from './cart.types'
+import { Cart } from './cart.types'
+import { addProductToCart } from './cart.slice'
 
-describe("Cart Reducer", () => {
+describe('Cart Reducer', () => {
   let initialState: CartState = {
     cartProducts: [
       {
         id: 1,
-        productImageUrl: "someurl.com",
-        name: "Inspiron 15",
+        productImageUrl: 'someurl.com',
+        name: 'Inspiron 15',
         price: 1200,
         quantity: 2,
       },
     ],
   }
 
-  it("Should handle adding or incrementing products quantity inside cart", () => {
+  it('Should handle adding or incrementing products quantity inside cart', () => {
     const productToAdd: Cart = {
       id: 1,
-      productImageUrl: "someurl.com",
-      name: "Inspiron 15",
+      productImageUrl: 'someurl.com',
+      name: 'Inspiron 15',
       price: 1200,
       quantity: 1,
     }
@@ -37,11 +37,11 @@ describe("Cart Reducer", () => {
     expect(cartProducts[0].quantity).toEqual(3)
   })
 
-  it("Should handle removing or decreasing products quantity inside cart", () => {
+  it('Should handle removing or decreasing products quantity inside cart', () => {
     const productToRemove: Cart = {
       id: 1,
-      productImageUrl: "someurl.com",
-      name: "Inspiron 15",
+      productImageUrl: 'someurl.com',
+      name: 'Inspiron 15',
       price: 1200,
       quantity: 1,
     }
@@ -53,12 +53,12 @@ describe("Cart Reducer", () => {
     expect(state.cartProducts[0].quantity).toEqual(1)
   })
 
-  it("Should handle clearing products from cart", () => {
+  it('Should handle clearing products from cart', () => {
     initialState.cartProducts.concat([
       {
         id: 2,
-        productImageUrl: "someurl.com",
-        name: "Apple Macbook",
+        productImageUrl: 'someurl.com',
+        name: 'Apple Macbook',
         price: 1700,
         quantity: 2,
       },
@@ -66,8 +66,8 @@ describe("Cart Reducer", () => {
 
     const productToClear: Cart = {
       id: 2,
-      productImageUrl: "someurl.com",
-      name: "Apple Macbook",
+      productImageUrl: 'someurl.com',
+      name: 'Apple Macbook',
       price: 1700,
       quantity: 2,
     }
@@ -80,7 +80,7 @@ describe("Cart Reducer", () => {
     expect(state.cartProducts[0].quantity).toEqual(2)
   })
 
-  it("Should handle resetting cart products", () => {
+  it('Should handle resetting cart products', () => {
     const state = cartReducer(initialState, resetCartProducts())
     expect(state.cartProducts.length).toEqual(0)
   })

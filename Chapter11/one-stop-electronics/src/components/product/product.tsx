@@ -1,13 +1,13 @@
-import { FC } from "react"
-import { useDispatch } from "react-redux"
-import { FormattedMessage, FormattedNumber } from "react-intl"
-import { useAppSelector } from "@/app/store/hooks"
-import { selectCurrentUser } from "@/app/store/user/user.selector"
-import MyButton, { BUTTON_TYPE_CLASSES } from "@/components/button/button"
-import { Product } from "@/app/store/product/product.types"
-import { addProductToCart } from "@/app/store/cart/cart.slice"
-import { BRAND_NAMES } from "@/constants"
-import { ProductContainer, Footer, Name, Brand, Price } from "./product.styles"
+import { FC } from 'react'
+import { useDispatch } from 'react-redux'
+import { FormattedMessage, FormattedNumber } from 'react-intl'
+import { useAppSelector } from '@/app/store/hooks'
+import { selectCurrentUser } from '@/app/store/user/user.selector'
+import MyButton, { BUTTON_TYPE_CLASSES } from '@/components/button/button'
+import { Product } from '@/app/store/product/product.types'
+import { addProductToCart } from '@/app/store/cart/cart.slice'
+import { BRAND_NAMES } from '@/constants'
+import { ProductContainer, Footer, Name, Brand, Price } from './product.styles'
 
 type ProductProps = {
   product: Product
@@ -30,7 +30,7 @@ const ProductItem: FC<ProductProps> = ({ product }) => {
           <FormattedMessage id="product.brand" />: <span>{brand}</span>
         </Brand>
         <Price>
-          <FormattedMessage id="product.price" />:{" "}
+          <FormattedMessage id="product.price" />:{' '}
           <span>
             <FormattedNumber
               value={price}

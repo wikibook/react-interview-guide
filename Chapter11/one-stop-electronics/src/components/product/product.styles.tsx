@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 type ImageBackgroundProps = {
   $hasWhiteBackgroundImage: boolean
@@ -18,7 +18,7 @@ export const ProductContainer = styled.div<ImageBackgroundProps>`
     background-color: #f1f1f1;
     transition: 0.5s all ease-in-out;
     mix-blend-mode: ${(props) =>
-      props.$hasWhiteBackgroundImage ? "multiply" : "normal"};
+      props.$hasWhiteBackgroundImage ? 'multiply' : 'normal'};
 
     &:hover {
       transform: scale(1.1);

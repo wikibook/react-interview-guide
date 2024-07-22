@@ -1,26 +1,26 @@
-import { useState, FormEvent, ChangeEvent } from "react"
-import { FormattedMessage, useIntl } from "react-intl"
-import { AuthError, AuthErrorCodes } from "firebase/auth"
-import { useDispatch } from "react-redux"
+import { useState, FormEvent, ChangeEvent } from 'react'
+import { FormattedMessage, useIntl } from 'react-intl'
+import { AuthError, AuthErrorCodes } from 'firebase/auth'
+import { useDispatch } from 'react-redux'
 
-import MyInputText from "@/components/input/input"
-import MyButton from "@/components/button/button"
+import MyInputText from '@/components/input/input'
+import MyButton from '@/components/button/button'
 
-import { SignUpContainer, LoginLink, MyButtonsContainer } from "./page.styles"
-import { signUpEmailAndPassword } from "@/backend/firebase/api/auth"
+import { SignUpContainer, LoginLink, MyButtonsContainer } from './page.styles'
+import { signUpEmailAndPassword } from '@/backend/firebase/api/auth'
 // import { insertUserDataFromAuth } from "@/backend/firebase/api/db-utils"
-import { useNavigator } from "@/app/store/hooks"
-import { InfoContainer } from "@/global.styles"
+import { useNavigator } from '@/app/store/hooks'
+import { InfoContainer } from '@/global.styles'
 import {
   AUTH_EMAIL_ALREADY_IN_USE_MSG,
   AUTH_WEAK_PASSWORD_MSG,
-} from "@/constants"
+} from '@/constants'
 
 const defaultFormFields = {
-  displayName: "",
-  email: "",
-  password: "",
-  confirmPassword: "",
+  displayName: '',
+  email: '',
+  password: '',
+  confirmPassword: '',
 }
 
 const SignUp = () => {
@@ -38,7 +38,7 @@ const SignUp = () => {
     event.preventDefault()
 
     if (password !== confirmPassword) {
-      alert("passwords do not match")
+      alert('passwords do not match')
       return
     }
 
@@ -47,7 +47,7 @@ const SignUp = () => {
 
       // await insertUserDataFromAuth(user)
       resetFormFields()
-      navigator("/")
+      navigator('/')
     } catch (error) {
       if ((error as AuthError).code === AuthErrorCodes.EMAIL_EXISTS) {
         alert(AUTH_EMAIL_ALREADY_IN_USE_MSG)
@@ -72,7 +72,7 @@ const SignUp = () => {
       </h2>
       <form onSubmit={handleSubmit}>
         <MyInputText
-          label={intl.formatMessage({ id: "signup.displayname.label" })}
+          label={intl.formatMessage({ id: 'signup.displayname.label' })}
           type="text"
           required
           onChange={handleChange}
@@ -81,7 +81,7 @@ const SignUp = () => {
         />
 
         <MyInputText
-          label={intl.formatMessage({ id: "signup.email.label" })}
+          label={intl.formatMessage({ id: 'signup.email.label' })}
           type="email"
           required
           onChange={handleChange}
@@ -90,7 +90,7 @@ const SignUp = () => {
         />
 
         <MyInputText
-          label={intl.formatMessage({ id: "signup.password.label" })}
+          label={intl.formatMessage({ id: 'signup.password.label' })}
           type="password"
           required
           onChange={handleChange}
@@ -99,7 +99,7 @@ const SignUp = () => {
         />
 
         <MyInputText
-          label={intl.formatMessage({ id: "signup.confirm_password.label" })}
+          label={intl.formatMessage({ id: 'signup.confirm_password.label' })}
           type="password"
           required
           onChange={handleChange}
@@ -112,7 +112,7 @@ const SignUp = () => {
           </MyButton>
         </MyButtonsContainer>
         <InfoContainer>
-          <FormattedMessage id="signup.account_signin_info" />{" "}
+          <FormattedMessage id="signup.account_signin_info" />{' '}
           <LoginLink to="/signin">
             <FormattedMessage id="signin.title" />
           </LoginLink>

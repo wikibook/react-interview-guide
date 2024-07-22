@@ -1,11 +1,11 @@
-import { FC, ButtonHTMLAttributes } from "react"
+import { FC, ButtonHTMLAttributes } from 'react'
 
-import { BasicButton, InvertedButton, SmallBasicButton } from "./button.styles"
+import { BasicButton, InvertedButton, SmallBasicButton } from './button.styles'
 
 export enum BUTTON_TYPE_CLASSES {
-  basic = "basic",
-  inverted = "inverted",
-  small = "small",
+  basic = 'basic',
+  inverted = 'inverted',
+  small = 'small',
 }
 
 const getButton = (buttonType = BUTTON_TYPE_CLASSES.basic) =>

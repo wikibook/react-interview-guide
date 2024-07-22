@@ -1,4 +1,4 @@
-import { MySpinnerContainer } from "./spinner.styles"
+import { MySpinnerContainer } from './spinner.styles'
 
 const MySpinner = () => <MySpinnerContainer />
 

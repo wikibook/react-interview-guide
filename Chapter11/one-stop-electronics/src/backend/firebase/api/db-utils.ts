@@ -8,10 +8,10 @@ import {
   query,
   getDocs,
   QueryDocumentSnapshot,
-} from "firebase/firestore"
-import { User } from "firebase/auth"
-import { UserInfo } from "@/app/store/user/user.types.ts"
-import { Product } from "@/app/store/product/product.types"
+} from 'firebase/firestore'
+import { User } from 'firebase/auth'
+import { UserInfo } from '@/app/store/user/user.types.ts'
+import { Product } from '@/app/store/product/product.types'
 
 export const db = getFirestore()
 
@@ -31,7 +31,7 @@ export const insertProductsData = async <T extends Product>(
 }
 
 export const fetchProductsData = async () => {
-  const collectionRef = collection(db, "products")
+  const collectionRef = collection(db, 'products')
   const queryRef = query(collectionRef)
   const querySnapshot = await getDocs(queryRef)
 

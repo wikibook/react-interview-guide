@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Barlow Condensed,Roboto,Helvetica,Arial,sans-serif;
+  font-family: Barlow Condensed, Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -8,6 +8,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }

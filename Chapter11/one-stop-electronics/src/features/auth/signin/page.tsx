@@ -1,20 +1,20 @@
-import { useState, FormEvent, ChangeEvent } from "react"
-import { FormattedMessage, useIntl } from "react-intl"
-import MyInputText from "@/components/input/input"
-import MyButton, { BUTTON_TYPE_CLASSES } from "@/components/button/button"
-import { AUTH_INVALID_PASSWORD_MSG, AUTH_USER_NOT_FOUND_MSG } from "@/constants"
+import { useState, FormEvent, ChangeEvent } from 'react'
+import { FormattedMessage, useIntl } from 'react-intl'
+import MyInputText from '@/components/input/input'
+import MyButton, { BUTTON_TYPE_CLASSES } from '@/components/button/button'
+import { AUTH_INVALID_PASSWORD_MSG, AUTH_USER_NOT_FOUND_MSG } from '@/constants'
 import {
   signInEmailAndPassword,
   signInGooglePopup,
-} from "@/backend/firebase/api/auth"
-import { useNavigator } from "@/app/store/hooks"
-import { SignInContainer, MyButtonsContainer, SignupLink } from "./page.styles"
-import { InfoContainer } from "@/global.styles"
-import { AuthError, AuthErrorCodes } from "firebase/auth"
+} from '@/backend/firebase/api/auth'
+import { useNavigator } from '@/app/store/hooks'
+import { SignInContainer, MyButtonsContainer, SignupLink } from './page.styles'
+import { InfoContainer } from '@/global.styles'
+import { AuthError, AuthErrorCodes } from 'firebase/auth'
 
 const defaultFormFields = {
-  email: "",
-  password: "",
+  email: '',
+  password: '',
 }
 
 const SignIn = () => {
@@ -29,7 +29,7 @@ const SignIn = () => {
 
   const signInWithGoogle = async () => {
     await signInGooglePopup()
-    navigator("/")
+    navigator('/')
   }
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -38,7 +38,7 @@ const SignIn = () => {
     try {
       await signInEmailAndPassword(email, password)
       resetFormFields()
-      navigator("/")
+      navigator('/')
     } catch (error) {
       if ((error as AuthError).code === AuthErrorCodes.USER_DELETED) {
         alert(AUTH_USER_NOT_FOUND_MSG)
@@ -65,7 +65,7 @@ const SignIn = () => {
       </h2>
       <form onSubmit={handleSubmit}>
         <MyInputText
-          label={intl.formatMessage({ id: "signin.email.label" })}
+          label={intl.formatMessage({ id: 'signin.email.label' })}
           type="email"
           required
           onChange={handleChange}
@@ -74,7 +74,7 @@ const SignIn = () => {
         />
 
         <MyInputText
-          label={intl.formatMessage({ id: "signin.password.label" })}
+          label={intl.formatMessage({ id: 'signin.password.label' })}
           type="password"
           required
           onChange={handleChange}

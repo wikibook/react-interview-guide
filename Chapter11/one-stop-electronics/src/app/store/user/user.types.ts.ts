@@ -5,6 +5,6 @@ export type UserInfo = {
 }
 
 export type UserState = {
-  currentUser: UserInfo | null,
+  currentUser: UserInfo | null
   locale: string
 }

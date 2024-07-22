@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
-const myInputColor = "grey"
+const myInputColor = 'grey'
 
 const MyShrinkLabelStyles = css`
   top: -0.9rem;
@@ -24,7 +24,7 @@ export const MyInputLabel = styled.label<MyInputLabelProps>`
   ${({ shrink }) => shrink && MyShrinkLabelStyles};
 
   &:after {
-    content: " *";
+    content: ' *';
     color: red;
   }
 `
@@ -52,7 +52,7 @@ export const MyInputGroup = styled.div`
   position: relative;
   margin: 2rem 1.2rem;
 
-  input[type="password"] {
+  input[type='password'] {
     letter-spacing: 0.3em;
   }
 `

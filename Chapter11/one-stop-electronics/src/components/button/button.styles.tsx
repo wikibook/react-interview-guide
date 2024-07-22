@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const BasicButton = styled.button`
   min-width: 10rem;
@@ -10,7 +10,7 @@ export const BasicButton = styled.button`
   background-color: rgb(112, 76, 182);
   color: white;
   font-size: 0.7rem;
-  font-family: "Barlow Condensed";
+  font-family: 'Barlow Condensed';
   font-weight: bolder;
   text-transform: uppercase;
   border: none;

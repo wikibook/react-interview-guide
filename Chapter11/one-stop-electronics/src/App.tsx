@@ -1,24 +1,24 @@
-import { useEffect } from "react"
-import { Routes, Route } from "react-router"
-import { IntlProvider } from "react-intl"
-import { useAppDispatch, useAppSelector } from "./app/store/hooks"
-import SignIn from "./features/auth/signin/page"
-import SignUp from "./features/auth/signup/page"
-import Header from "./components/header/header"
-import Products from "./features/products/products"
-import { onAuthStateChangedListener } from "./backend/firebase/api/auth"
+import { useEffect } from 'react'
+import { Routes, Route } from 'react-router'
+import { IntlProvider } from 'react-intl'
+import { useAppDispatch, useAppSelector } from './app/store/hooks'
+import SignIn from './features/auth/signin/page'
+import SignUp from './features/auth/signup/page'
+import Header from './components/header/header'
+import Products from './features/products/products'
+import { onAuthStateChangedListener } from './backend/firebase/api/auth'
 // import { insertUserDataFromAuth } from "./backend/firebase/api/db-utils"
-import { fetchProductsData } from "@/backend/firebase/api/db-utils"
-import { insertProductsData } from "@/backend/firebase/api/db-utils"
-import PRODUCTS_DATA from "@/backend/firebase/api/products-data"
-import { setProducts } from "@/app/store/product/product.slice"
-import { setCurrentUser, setCurrentLocale } from "@/app/store/user/user.slice"
-import Footer from "@/components/footer/footer"
-import CartProducts from "@/features/cart/cart"
-import { LOCALES } from "@/i18n/locale"
-import { DEFAULT_LOCALE } from "@/constants"
-import { selectCurrentLocale } from "@/app/store/user/user.selector"
-import "@/App.css"
+import { fetchProductsData } from '@/backend/firebase/api/db-utils'
+import { insertProductsData } from '@/backend/firebase/api/db-utils'
+import PRODUCTS_DATA from '@/backend/firebase/api/products-data'
+import { setProducts } from '@/app/store/product/product.slice'
+import { setCurrentUser, setCurrentLocale } from '@/app/store/user/user.slice'
+import Footer from '@/components/footer/footer'
+import CartProducts from '@/features/cart/cart'
+import { LOCALES } from '@/i18n/locale'
+import { DEFAULT_LOCALE } from '@/constants'
+import { selectCurrentLocale } from '@/app/store/user/user.selector'
+import '@/App.css'
 
 function App() {
   const dispatch = useAppDispatch()

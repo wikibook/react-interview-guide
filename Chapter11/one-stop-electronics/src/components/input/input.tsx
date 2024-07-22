@@ -1,5 +1,5 @@
-import { FC, InputHTMLAttributes } from "react"
-import { MyInputLabel, MyInputText, MyInputGroup } from "./input.styles"
+import { FC, InputHTMLAttributes } from 'react'
+import { MyInputLabel, MyInputText, MyInputGroup } from './input.styles'
 
 export type MyInputProps = {
   label: string
@@ -13,7 +13,7 @@ const MyInput: FC<MyInputProps> = ({ label, ...otherProps }) => {
         <MyInputLabel
           shrink={Boolean(
             otherProps.value &&
-              typeof otherProps.value === "string" &&
+              typeof otherProps.value === 'string' &&
               otherProps.value.length,
           )}
         >

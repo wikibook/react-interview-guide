@@ -1,16 +1,16 @@
-import { Fragment, ChangeEvent } from "react"
-import { FormattedMessage } from "react-intl"
-import MySelect from "@/components/select/select"
-import { useAppSelector } from "@/app/store/hooks"
-import { selectCurrentUser } from "@/app/store/user/user.selector"
-import { selectCartProductsCount } from "@/app/store/cart/cart.selector"
-import { resetCartProducts } from "@/app/store/cart/cart.slice"
-import { useAppDispatch, useNavigator } from "@/app/store/hooks"
-import { setCurrentLocale } from "@/app/store/user/user.slice"
-import { ReactComponent as Logo } from "@/assets/one-stop-electronics.svg"
-import { ReactComponent as ShoppingCartIcon } from "@/assets/shopping-cart.svg"
-import { ReactComponent as UserProfileIcon } from "@/assets/user-profile-avatar.svg"
-import { signOutUser } from "@/backend/firebase/api/auth"
+import { Fragment, ChangeEvent } from 'react'
+import { FormattedMessage } from 'react-intl'
+import MySelect from '@/components/select/select'
+import { useAppSelector } from '@/app/store/hooks'
+import { selectCurrentUser } from '@/app/store/user/user.selector'
+import { selectCartProductsCount } from '@/app/store/cart/cart.selector'
+import { resetCartProducts } from '@/app/store/cart/cart.slice'
+import { useAppDispatch, useNavigator } from '@/app/store/hooks'
+import { setCurrentLocale } from '@/app/store/user/user.slice'
+import { ReactComponent as Logo } from '@/assets/one-stop-electronics.svg'
+import { ReactComponent as ShoppingCartIcon } from '@/assets/shopping-cart.svg'
+import { ReactComponent as UserProfileIcon } from '@/assets/user-profile-avatar.svg'
+import { signOutUser } from '@/backend/firebase/api/auth'
 
 import {
   NavContainer,
@@ -19,7 +19,7 @@ import {
   NavLogoContainer,
   NavIconContainer,
   NavItemCount,
-} from "./header.styles"
+} from './header.styles'
 
 const Header = () => {
   const dispatch = useAppDispatch()
@@ -31,7 +31,7 @@ const Header = () => {
     dispatch(signOutUser)
     dispatch(resetCartProducts())
   }
-  const navigateToCart = () => navigator("/cart")
+  const navigateToCart = () => navigator('/cart')
   const handleChangeLocale = (event: ChangeEvent<HTMLSelectElement>) => {
     const locale = event.target.value
     dispatch(setCurrentLocale(locale))

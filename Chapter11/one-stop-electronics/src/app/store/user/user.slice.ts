@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit"
-import { UserState } from "./user.types.ts"
+import { createSlice } from '@reduxjs/toolkit'
+import { UserState } from './user.types.ts'
 
 const INITIAL_STATE: UserState = {
   currentUser: null,
-  locale: 'en-US'
+  locale: 'en-US',
 }
 
 export const userSlice = createSlice({
-  name: "user",
+  name: 'user',
   initialState: INITIAL_STATE,
   reducers: {
     setCurrentUser(state, action) {
@@ -15,7 +15,7 @@ export const userSlice = createSlice({
     },
     setCurrentLocale(state, action) {
       state.locale = action.payload
-    }
+    },
   },
 })
 

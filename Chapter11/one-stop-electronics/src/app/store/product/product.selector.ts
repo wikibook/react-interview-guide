@@ -1,6 +1,6 @@
-import { createSelector } from "reselect"
-import { RootState } from "@/app/store/store"
-import { Product, ProductMap, ProductsState } from "./product.types"
+import { createSelector } from 'reselect'
+import { RootState } from '@/app/store/store'
+import { Product, ProductMap, ProductsState } from './product.types'
 
 const selectProductReducer = (state: RootState): ProductsState => state.products
 
@@ -28,7 +28,7 @@ export const selectProductsMap = createSelector(
         acc[category]
           ? acc[category].push(product)
           : (acc[category] = [product])
-        acc["all"].push(product)
+        acc['all'].push(product)
         return acc
       },
       { all: [] } as ProductMap,

@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import { styled } from 'styled-components'
 
 export const SelectContainer = styled.select`
   height: 1.1rem;
