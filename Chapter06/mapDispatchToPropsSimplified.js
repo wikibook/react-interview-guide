@@ -1,0 +1,3 @@
+const mapDispatchToProps = { 
+    toggleCity 
+}; 
