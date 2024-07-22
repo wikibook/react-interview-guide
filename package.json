@@ -1,0 +1,20 @@
+{
+  "name": "kor-react-interview-guide",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prepare": "lefthook install",
+    "pre-commit": "pnpx lefthook pre-commit",
+    "prettier": "prettier '**/*.{json,yaml,yml,js,jsx,ts,tsx,html}' --check",
+    "prettier:fix": "prettier '**/*.{json,yaml,yml,js,jsx,ts,tsx,html}' --write"
+  },
+  "author": "yceffort <root@yceffort.kr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@titicaca/prettier-config-triple": "^1.0.2",
+    "lefthook": "^1.5.7",
+    "lint-staged": "^13.2.2",
+    "prettier": "^3.3.3"
+  },
+  "packageManager": "pnpm@9.5.0"
+}
