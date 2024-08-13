@@ -1,56 +1,44 @@
-# React Interview Guide
-React Interview Guide, Published by Packt
+![cover](cover.jpg)
 
-<a href="https://www.packtpub.com/product/react-interview-guide/9781803241517"><img src="https://static.packt-cdn.com/products/9781803241517/cover/smaller" alt="React Interview Guide" height="256px" align="right"></a>
+# 리액트 인터뷰 가이드
+### 면접 준비부터 실무까지 한 번에 챙기는 리액트 개발자 핵심 노트
 
-This is the code repository for [React Interview Guide](https://www.packtpub.com/product/react-interview-guide/9781803241517), published by Packt.
+- **수디르 조나, 앤드류 바이스덴** 지음 | **김용찬, 강주희** 옮김
+- ISBN: 9791158395377
+- 판형: 188\*240\*16mm
+- 28,000원 | 2024년 8월 21일 발행 | 380쪽
+- [책 홈페이지](https://wikibook.co.kr/react-interview-guide/)
+- [도서 미리보기](https://www.yes24.com/Product/Viewer/Preview/130271536)
+- [도서 관련 문의](https://wikibook.co.kr/support/contact/)
 
-**Learn all you need to know to ace any React interview and land your dream job**
+---
 
-## What is this book about?
+**총 223개에 달하는 리액트 개발자 면접 질문을 통해 리액트와 프런트엔드 개발 지식을 한 단계 업그레이드하세요!**
 
-This book will aid individuals preparing for React job interviews as well as seasoned developers looking to expand their React knowledge. A basic understanding of fundamental web development concepts and technologies, such as HTML, JavaScript, and CSS is necessary to get started.
+《리액트 인터뷰 가이드》는 리액트 생태계와 최신 리액트 개발 동향에 대해 종합적으로 다룬다. 이 책을 통해 리액트 개발에 필수적인 기술과 팁을 통해 앞으로 겪을 다양한 상황에 신속하게 대응할 수 있는 능력을 키울 수 있다.
 
-This book covers the following exciting features:
+또한 리액트 개발자 면접을 준비하는 프런트엔드 개발자 꿈나무들뿐만 아니라 이미 경험 많은 개발자들도 리액트 지식을 확장할 수 있도록 리액트 면접에서 자주 등장하는 질문과 테스팅, Next.js 앱 구축과 같은 중요 기술들을 함께 다룬다.
 
-* Discover contemporary strategies to make your profile shine in a competitive marketplace
-* Access diverse interview questions, from basic to advanced, to land a React developer job
-* Master React’s latest features, performance optimization, and debugging techniques step by step
-* Grasp techniques and tips to cover crucial skills for the React developer role
-* Understand various frameworks and libraries to prepare to answer any React interview question
-* Build fully fledged React-based applications to ace coding assignments
-  
-If you feel this book is for you, get your [copy](https://www.amazon.com/React-Interview-Guide-Learn-interview/dp/1803241519) today!
+이 책을 통해 리액트 직무 면접에 대한 자신감을 쌓고, 리액트 개발자로서 한 단계 더 나아갈 수 있을 것이다.
 
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
-alt="https://www.packtpub.com/" border="5" /></a>
+**★ 이 책에서 다루는 내용 ★**
 
-## Instructions and Navigations
-All of the files is organized into folders. For example, Chapter2
+- 경쟁이 치열한 시장에서 프로필을 빛나게 할 최신 전략
+- 기초부터 고급까지, 다양한 면접 질문에 대비하고 리액트 개발자 직무를 얻는 방법
+- 리액트의 최신 기능, 성능 최적화, 디버깅 기술
+- 리액트 개발자에게 필수적인 기술과 팁
+- 다양한 프레임워크와 라이브러리를 이해하고 리액트 면접 질문에 대비하는 법
+- 완벽한 리액트 기반 애플리케이션을 구축하고 코딩 과제에서 뛰어난 성과를 거두는 방법
 
+---
+## 리액트 개발자 질문 목록
 
-**Following is what you need for this book:**
+- [리액트 개발자 질문 목록](questions.md)
 
-Are you struggling with React job interviews, feeling hindered by the lack of knowledge or confidence? Look no further than the React Interview Guide. Complete with the latest features of the React library, this comprehensive solution will assist you in taking a definitive step forward in your career as a React developer.
-
-
-With the following software and hardware list you can run all code files present in the book (Chapter 2-12).
-
-### Software and Hardware List
-| Software required                    | OS required                         |
-| ------------------------------------ | ----------------------------------- |
-| React 18 Windows             | macOS, or Linux         |
-| TypeScript 3.7 |                          |
-| TECMAScript 11 |                          |
-
-
-### Related products <Other books you may enjoy>
-* React and React Native  [[Packt]](https://www.packtpub.com/product/react-and-react-native-fourth-edition/9781803231280) [[Amazon]](https://www.amazon.com/React-Native-cross-platform-JavaScript-applications/dp/1803231289)
-
-* Learn React with TypeScript [[Packt]](https://www.packtpub.com/product/unreal-engine-5-character-creation-animation-and-cinematics/9781801812443) [[Amazon]](https://www.amazon.com/Learn-React-TypeScript-Beginners-development/dp/1789610257/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)
-
-## Get to Know the Author
-**Sudheer Jonna**, hailing from Nellore, India, is a seasoned lead software developer currently based in Singapore. With expertise in Java and JavaScript, he specializes in architecting and developing large-scale applications, prioritizing robust architectures and high performance. Sudheer's comprehensive knowledge spans Single Page Applications (ReactJS/VueJS/Angular), backend API development, SQL, and containerization, enabling him to assist developers in advancing their careers. Besides his professional role, Sudheer is a published author, speaker, trainer, blogger, and an active member of public forums.
-
-**Andrew Baisden**, born and raised in London, England, is an accomplished Software Developer, Content Creator, and Technical Writer. Proficient in JavaScript and React, Andrew excels in developing user-friendly and captivating applications. His versatility extends to Python and C#, enhancing his reputation as a well-rounded programmer. Andrew's talent for simplifying complex concepts has made him a sought-after technical writer. Alongside his professional achievements, Andrew has a significant online presence, amassing a combined following of over 20,000 on various social media platforms, accessible through his Linktree profile.
-  
+---
+ 
+ ## 구입처
+ 
+ - [예스24](https://www.yes24.com/Product/Goods/130271536)
+ - [교보문고](https://product.kyobobook.co.kr/detail/S000214006794)
+ - [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=344584446)
